@@ -1,202 +1,68 @@
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
+@font-face {
+    font-family: 'Circular Std Bold';
+    src: url('fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('fonts/CircularStd-Bold.woff') format('woff'),
 }
 
-.cf:after {
-    clear: both;
-}
-
-/**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
-.cf {
-    *zoom: 1;
-}
-
-* {
-    font-family: 'Circular Std Medium', serif;
-}
-
-a:hover {
-    color: salmon;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    line-height: 27px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-}
-
-.nav a:hover {
-    color: salmon
-}
-
-.nav a:active {
-    color: salmon;
-}
-
-.luar {
-    width: 970px;
-    margin:auto;
-    background-color: rgb(241, 241, 241);
-    position:relative;
-    top: 100px;
-    z-index: 1;
+@font-face {
+    font-family: 'Circular Std Medium';
+    src: url('fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('fonts/CircularStd-Medium.woff') format('woff'),
 
 }
 
-.nav {
-    background-color: rgb(146, 153, 218);
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-}
-
-.judul {
-    wdith: 100%;
-    padding: 20px;
-    margin: 0px auto;
-}
-
-body {
-    margin: 0;
-    background-image: url(spikes.png);
-}
-
-.judul label {
-    margin: 0;
-    font-family: 'Circular Std Medium', serif;
-    color: white;
-    font-size: 30px;
-}
-
-.menu {
-    margin-top: 10px;
-    float: right;
-}
-
-.gambarcover {
-    width: 100%;
-}
-
-.artikel {
-    padding: 25px;
-    width: 600px;
-    float: left;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('fonts/CircularStd-Book.woff2') format('woff2'),
+        url('fonts/CircularStd-Book.woff') format('woff'),
 
 }
 
-.artikel h1 {
-    margin: 0px;
+.navbar-brand {
+    font-family: 'Circular Std Bold';
 }
 
-hr {
-    margin: 0px;
-    height: 10px;
-    padding: 0px;
-    background-color: rgb(96, 105, 190);
-    border: 0px;
+h2 {
+    font-family: 'Circular Std Bold';
 }
 
-.footer {
-    width: 100%;
-    background-color: rgb(96, 105, 190);
-    margin: 0px auto;
-    padding: 10px;
-    
+.text-header {
+    margin-top: 57vh;
 }
 
-.footer p {
-    color: white;
-    text-align: center;
+.art1 {
+    width: 50vh;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 15vh;
 }
 
-.artikel img {
-    width: 200px;
-    float: left;
-    /*float > membuat objek mengambang
-    dan objek tidak akan lagi dibaca oleh parent , jadi
-    literally ngambang beneran*/
-    margin: 0 12px 0 0;
+.art2 {
+    width: 50vh;
+    border-radius: 50%;
+    border: 3px solid white;
 }
 
-.clear {
-    clear: left;
-    /*digunakan untuk membersihkan float
-    dan mengubah objek menjadi 'ada' kembali
-    ibaratnya sih kaya bikin garis baru cuman pake div kosong
-    yang isinya elemen clear*/
+.art3 {
+    width: 50vh;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 25vh;
 }
 
-/** SCRIPT MICRO CLEARFIX
-http://nicolasgallagher.com/micro-clearfix-hack/
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- 
- .cf:before,
- .cf:after {
-     content: " ";  1 
-     display: table; 2 
- }
- 
- .cf:after {
-     clear: both;
- }
- 
-  For IE 6/7 only
-  Include this rule to trigger hasLayout and contain floats.
-  
- .cf {
-     *zoom: 1;
- }
- */
-
-.author {
-    width: 300px;
-    float: left;
+.card-title {
+    font-family: 'Circular Std Bold';
 }
 
-.author img {
-    float: left;
-    margin: 0 12px 0 0;
-    width: 100px;
+.card-text {
+    font-family: 'Circular Std Book';
 }
 
-.ribbon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
+.btn-primary {
+    font-family: 'Circular Std Book';
 }
 
-.ribbon img {
-    width: 70px;
+.card {
+    border-radius: 10px;
+    overflow: hidden;
 }

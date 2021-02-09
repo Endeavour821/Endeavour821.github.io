@@ -1,67 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>UnityID</title>
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- css punya gue -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>MyPortofolio</title>
 </head>
 
-<body>
-    <div class="nav">
-        <div class="judul">
-            <label>UnityID</label>
-            <div class="menu">
-                <a class="1" href="#">Home</a>
-                <a class="2" href="#">Products</a>
-                <a class="3" href="#">Service</a>
-                <a class="4" href="#">About</a>
-                <a class="5" href="#">Contacts</a>
+<body id="bodi">
+  <!--HEADER-->
+  <section id="header">
+    <header class="text-light pt-5 pb-5" style="background-color: #474a60; height:100vh;">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col text-left">
+              <h1 style="font-family:'Circular Std Bold'; color:#f56f8f;">R</h1>
             </div>
+            <div class="col text-right">
+              <h1 class="text-right" style="font-family:'Circular Std Bold'; color:#27abb4;">S</h1>
+            </div>
+          </div>
+
+          <h1 class="display-3 text-header" style="font-family:'Circular Std Bold'; font-size:6vw;">Hello There</h1>
+          <h2 style="font-size:3vw;">Welcome To My Portfolio</h2>
+          <!--<h1 class="display-4 text-secondary">by <a href="https://juzraai.github.io/" class="text-info">Rachmat SM</a></h1>-->
         </div>
-        <hr>
+    </header>
+  </section>
+
+  <!-- UNTUK MANGGIL HOME-->
+  <div id="hum"></div>
+
+  <!--NAVBAR-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #474a60;">
+    <div class="container">
+      <a class="navbar-brand" href="#bodi">R</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#hum" style="font-family: 'Circular Std Book';">Home <span
+              class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#abut" style="font-family: 'Circular Std Book';">About</a>
+          <a class="nav-link" href="#portfolio" style="font-family: 'Circular Std Book';">Portfolio</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+            style="font-family: 'Circular Std Book';">Contact</a>
+        </div>
+      </div>
     </div>
-    <div class="luar">
-        <div class="ribbon">
-            <a target="_blank" href="https://www.facebook.com/rahmat.saipulmujab"><img src="assets/ribbon.png" alt="Cannot Load"></a>
+  </nav>
+
+  <!--JUMBOTRON-->
+  <div class="jumbotron jumbotron-fluid" style="background-color: #313443;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-left">
+          <h1 class="display-4" style="font-family: 'Circular Std Bold'; color:white; font-size:4vw">Rachmat Syaiful Mujab</h1>
+          <h2 style="font-family: 'Circular Std Book'; color:white; font-size:2vw">Im a Junior</h2>
+          <h2 style="font-family: 'Circular Std Book'; color:white; font-size:2vw">Programmer & Designer</h2>
         </div>
-        <img class="gambarcover" src="assets/haha.jpg" alt="Maaf Tidak Bisa Menampilkan Gambar">
-        <div class="artikel">
-            <h1>Artikel Pertama</h1>
-            <p>Ditulis Oleh <a href="#">Rachmat Syaiful Mujab</a> Pada 4 Februari 2020</p>
-            <img src="assets/sample.jpg" alt="Maaf Gambar Tidak Dapat dimuat">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos cumque corporis molestias unde.
-                Suscipit, eos! Porro, minus. Iusto maxime modi eligendi eveniet tempore quasi saepe voluptatem sed
-                dignissimos adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-                assumenda
-                eveniet quae, obcaecati ducimus corrupti officia vero libero doloribus omnis tempore odio quidem,</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla molestiae soluta esse
-                voluptatibus, quas eius nam dolores earum, optio nostrum accusantium culpa ipsa rem mollitia facere!
-                Neque, tempore? Architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-                architecto? Suscipit, hic deleniti veniam incidunt quod nisi explicabo mollitia culpa at velit modi
-                repellat alias nulla eos magni quaerat saepe!. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-                Mollitia alias modi nemo, unde tempore harum beatae? Officiis dignissimos voluptas, accusantium
-                excepturi repudiandae itaque? Accusamus totam enim expedita fugit! Praesentium, repudiandae.</p>
+        <div class="col text-right">
+          <img class="pp rounded-circle" style="max-width: 35%; border:2px solid white;" src="img/profile.jpg"
+            alt="Sorry The File Is Broken">
         </div>
-        <div class="author">
-            <h2>Tentang Penulis</h2>
-            <img src="assets/author.jpg" alt="Maaf Gambar Tidak Dapat dimuat">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur magni eum voluptatum
-                aspernatur minus ut maxime totam! Expedita officiis molestiae dolorum ratione quasi. Quam quas,
-                labore,
-                eius harum vero temporibus perferendis pariatur sapiente voluptas voluptatem ex aspernatur,
-                assumenda
-                atque quibusdam. Assumenda unde minima nobis eligendi iusto nesciunt, aliquam ipsum deleniti,
-                aperiam,</p>
-        </div>
-        <div class="clear"></div>
-        <div class="footer">
-            <p>Copyright 2020 Rachmat Syaiful Mujab</p>
-        </div>
+      </div>
+      <!--<h2></h2>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
     </div>
+  </div>
 
 
+  <!--ABOUT ME-->
+  <section id="abut">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="mb-4 mt-2">About me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mr-5 ml-5 text-justify">
+          <!--<p style="font-family: 'Circular Std Book';">Halo,perkenalkan nama saya Rachmat Syaiful Mujab, lahir pada 21 maret 2001 di bandung.
+          tempat tinggal saya berada di cimahi. Saya adalah junior programmer dan desainer, sampai
+          saat portfolio ini dibuat, saya sudah menguasai beberapa bahasa pemrograman yaitu :
+          C,C++,dan Python. Dan saya akan terus mempelajari berbagai bahasa. Saya juga dapat
+          melakukan pemrograman Embedded system pada arduino yang memiliki bahasa pemrograman
+          layaknya bahasa C dan Programmable Logic Controller Omron
+          dengan bahasa Ladder Diagram. Selain itu saya juga dapat membuat program untuk UI visualbasic 6
+          dengan bahasa visualbasic, dan mendesain UI/antarmuka HMI (Human User Interface) milik omron.
+          </p>-->
 
+          <p style="font-family: 'Circular Std Book';">Hello, my name is Rachmat Syaiful Mujab, born on 21 March 2001 in
+            Bandung.I live at cimahi. I am a
+            junior programmer and designer. Until this portfolio was created, I had mastered several programming
+            languages,
+            there are : C, C ++, and Python. And I will continue to studying different programming languages. I can also
+            programming the Embedded
+            system on Arduino which has a programming language like the C language and the Omron Programmable Logic
+            Controller with the Ladder Diagram language.Furtermore, I can also programming UI visualbasic 6 with
+            visualbasic
+            language, and designing Omron's UI / HMI (Human User Interface) interface.</p>
+        </div>
+      </div>
+  </section>
+
+  <!--MY PORTFOLIO-->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="mt-4 mb-2">My Portfolio</h2>
+        </div>
+      </div>
+      <div class="row mr-4 ml-4">
+        <div class="col-md mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <img src="img/poster1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Memphis Style Poster</h5>
+              <p class="card-text">Poster dari sebuah artikel di media cetak online, Software
+                yang digunakan adalah Adobe Potoshop CS6.
+              </p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <img src="img/art.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flat Illustration</h5>
+              <p class="card-text">Flat illustration leonardo da vinci yang di trace dari
+                desain leonardo da vinci sebagai character di Assasins Creed 2.
+              </p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <img src="img/poster2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Collage Poster</h5>
+              <p class="card-text">Collage Poster peradaban
+                yunani yang bertujuan mengedukasi pembaca tentang peradaban yunani kuno.
+              </p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mr-4 ml-4 mb-5">
+        <div class="col mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <img src="img/ss1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VisualBasic6 UI</h5>
+              <p class="card-text">UI dari sebuah restoran jepang, terdapat 4 menu makanan,
+                terinspirasi dari vending machine di jepang.
+              </p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <img src="img/haha.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Traffic Simulation CX-Design</h5>
+              <p class="card-text">Traffic simulation menggunakan CX-Design.Mengsimulasikan pertigaan
+                dengan 3 traffic light.
+              </p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card shadow" style="width: 100%;">
+            <!--<img src="img/ss1.jpg" class="card-img-top" alt="...">-->
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <h5 class="card-title">Other Projects</h5>
+              <p class="card-text">ComingSoon</p>
+              <a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+
+  <footer class="footer mt-auto  pt-3" style="background-color: #474a60;">
+    <div class="container">
+      <div class="col text-center pb-1">
+        <p style="font-family: 'Circular Std Book'; color: white;">Copyright 2021</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
