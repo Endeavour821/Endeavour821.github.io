@@ -18,12 +18,34 @@
 
 }
 
+@font-face {
+    font-family: 'Monument Black';
+    src: url('fonts/MonumentExtended-Black.woff') format('woff2'),
+        url('fonts/MonumentExtended-Black.woff2') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'Monument Regular';
+    src: url('fonts/MonumentExtended-Regular.woff') format('woff2'),
+        url('fonts/MonumentExtended-Regular.woff2') format('woff'),
+
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('fonts/NeueMontreal-Bold.woff2') format('woff2'),
+        url('fonts/NeueMontreal-Bold.woff') format('woff'),
+
+}
+
 .navbar-brand {
     font-family: 'Circular Std Bold';
 }
 
 h2 {
-    font-family: 'Circular Std Bold';
+    font-family: 'Neue Montreal'; 
+    font-weight: bold;
 }
 
 .text-header {
@@ -51,11 +73,12 @@ h2 {
 }
 
 .card-title {
-    font-family: 'Circular Std Bold';
+    font-family: 'Neue Montreal'; 
+    font-weight: bold;
 }
 
 .card-text {
-    font-family: 'Circular Std Book';
+    font-family: 'Neue Montreal';
 }
 
 .btn-primary {
@@ -65,4 +88,17 @@ h2 {
 .card {
     border-radius: 10px;
     overflow: hidden;
+}
+
+.welcome {
+    font-size: 7vw;
+    font-family: 'Monument Black';
+    z-index: 2;
+    position: absolute;
+    line-height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 20vw;
+    color: white;
 }
