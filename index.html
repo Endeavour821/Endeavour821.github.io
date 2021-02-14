@@ -15,12 +15,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!--overpass-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;900&display=swap" rel="stylesheet">
   <!--AOS-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-  <!--monsterrat-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <!--title page-->
   <title>MyPortofolio</title>
 </head>
@@ -59,11 +56,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#hum" style="font-family: 'Monument Regular','Montserrat';">Home <span
+          <a class="nav-link active" href="#hum" style="font-family: 'Monument Regular','Overpass';">Home <span
               class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#abut" style="font-family: 'Monument Regular','Montserrat';">About</a>
-          <a class="nav-link" href="#portfolio" style="font-family: 'Monument Regular','Montserrat';">Portfolio</a>
-          <a class="nav-link" href="#footer" style="font-family: 'Monument Regular','Montserrat';">Contact</a>
+          <a class="nav-link" href="#abut" style="font-family: 'Monument Regular','Overpass';">About</a>
+          <a class="nav-link" href="#portfolio" style="font-family: 'Monument Regular','Overpass';">Portfolio</a>
+          <a class="nav-link" href="#footer" style="font-family: 'Monument Regular','Overpass';">Contact</a>
         </div>
       </div>
     </div>
@@ -76,7 +73,7 @@
   </a>
 
   <!--CAROUSEL-->
-  <section id="hum">
+  <!--<section id="hum">
     <div data-aos-mirror="false" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -95,24 +92,33 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </section>
+  </section>-->
 
+  <section id="hum">
+    <div class="jumbotron jumbotron-fluid text-center"
+      style="padding:0; margin:0; position:relative; line-height: 100%;">
+      <img class="img-fluid" src="img/noise2.png">
+      <h2 style="font-family: 'Monument Black','Overpass Black'; font-size: 7vw; color:white;
+        position:absolute; z-index:10; top:50%; left:0; right:0; bottom:0; line-height:100%"><span
+          style="text-transform: uppercase;" id="type"></span></h2>
+    </div>
+  </section>
 
   <!--ABOUT ME-->
   <section id="abut" style="background-color: #222227;">
     <div class="container pb-5">
       <div class="row">
         <div data-aos="slide-down" class="col text-center mt-5 mb-2">
-          <h2 style="font-family: 'Monument Black','Montserrat'; color:white; font-weight: bold;">ABOUT ME</h2>
+          <h2 style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">ABOUT ME</h2>
         </div>
       </div>
       <div class="row">
         <div data-aos="slide-right" class="col-md text-center">
           <div class="cont_edu mt-2 mr-3 mb-2 py-5 px-5">
-            <h3 style="font-family: 'Monument Regular','Montserrat'; color:white; font-weight: bold; font-size: 4vh;">
+            <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
               EDUCATIONAL
             </h3>
-            <h3 style="font-family: 'Monument Regular','Montserrat'; color:white; font-weight: bold; font-size: 4vh;">
+            <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
               HISTORY</h3>
             <ul class="list-group">
               <li class="list-group-item">SDN Leuwigajah 3</li>
@@ -127,12 +133,11 @@
         </div>
 
         <div class="col">
-          <div data-aos="slide-down" class="cont_img mt-2 mr-3 mb-2">
-            <a class="tanda_tanya" href="#">
-              <img class="img1" src="img/unrevealed.png">
-              <span class="tanda">
-                <p>?</p>
-              </span>
+          <div class="cont_img mt-2 mr-3 mb-2">
+            <img id="img1" src="img/unrevealed.png">
+            <img id="img2" src="img/revealed.png">
+            <a onclick="ShowHide()" class="tombol">
+              <i class="bi bi-x"></i>
             </a>
           </div>
           <p data-aos="slide-left" class="mt-1"
@@ -158,7 +163,7 @@
     <div class="container pb-5">
       <div class="row">
         <div data-aos="slide-down" class="col text-center mt-5">
-          <h2 class="Ingfo" style="font-family: 'Monument Black','Montserrat'; color:white; font-weight: bold;">MY
+          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">MY
             PORTFOLIO</h2>
         </div>
       </div>
@@ -240,7 +245,7 @@
     <footer class="footer mt-auto pt-3" style="background-color: #222227;">
       <div data-aos="slide-up" class="container text-center">
         <div class="col text-center pb-1">
-          <h2 class="Ingfo" style="font-family: 'Monument Black','Montserrat'; color:white; font-weight: bold;">FIND ME
+          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">FIND ME
           </h2>
           <ul class="text-center mx-auto text-center" style="list-style-type: none;">
             <li style="font-size:x-large">
@@ -338,8 +343,32 @@
     var controller = document.querySelector(".controller");
     controller.addEventListener("click", controlHandler);
   </script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--showhide profile picture-->
+  <script>
+    function ShowHide() {
+      var x = document.getElementById("img2");
+      var y = document.getElementById("img1");
+      if (x.style.opacity === "0") {
+        x.style.opacity = "1";
+        y.style.opacity = "0";
+      } else {
+        x.style.opacity = "0";
+        y.style.opacity = "1";
+      }
+    }
+  </script>
+  <!--typed.js-->
+  <script src="js/typed.js"></script>
+  <script>
+    var typed3 = new Typed('#type', {
+      strings: ['Engineer', 'Designer'],
+      typeSpeed: 60,
+      backSpeed: 60,
+      smartBackspace: true, // this is a default
+      loop: true
+    });
+  </script>
+  <!--Option 2: Separate Popper and Bootstrap JS-->
   <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

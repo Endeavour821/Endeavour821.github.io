@@ -113,37 +113,38 @@ h2 {
     clear: left;
 }
 
-
-.tanda {
-    display: block;
-    width: 50vh;
-    height: 55vh;
-    position: absolute;
-    top: 0px;
-    line-height: 100%;
-    background-color: rgba(221, 221, 221, 0.527);
-    opacity: 0%;
-    transform: scale(0);
-    transition: 1s;
-    z-index: 40;
-}
-
-.tanda p {
-    line-height: 53vh;
-    text-align: center;
-    font-family: 'Monument Black';
-    font-size: 30vh;
-    color: #222227;
-
-}
-
-.tanda_tanya:hover .tanda {
-    opacity: 100%;
-    transform: scale(1) rotate(360deg);
-}
-
-.img1 {
+#img2 {
     width: 100%;
+    z-index: 10;
+    transition: 1s;
+}
+
+#img1 {
+    width: 100%;
+    z-index: 8;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tombol {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    z-index: 20;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
 }
 
 .cont_img {
@@ -275,6 +276,7 @@ h2 {
         opacity: 0;
     }
 }
+
 /*Ripple*/
 .ripple {
     width: 10px;
