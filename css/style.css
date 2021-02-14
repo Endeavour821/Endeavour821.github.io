@@ -63,7 +63,7 @@ h2 {
 }
 
 #tanggalwaktu {
-    font-family: 'Neue Montreal','Overpass';
+    font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
     position: absolute;
     top: 20px;
@@ -73,7 +73,7 @@ h2 {
 }
 
 .kanan {
-    font-family: 'Neue Montreal','Overpass';
+    font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
     position: absolute;
     top: 20px;
@@ -223,4 +223,8 @@ h2 {
         top: 90%;
         opacity: 0;
     }
+}
+
+.aos-init:not(.aos-animate):after {
+    position: fixed
 }
