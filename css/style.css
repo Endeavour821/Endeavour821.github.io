@@ -1,24 +1,4 @@
 @font-face {
-    font-family: 'Circular Std Bold';
-    src: url('fonts/CircularStd-Bold.woff2') format('woff2'),
-        url('fonts/CircularStd-Bold.woff') format('woff'),
-}
-
-@font-face {
-    font-family: 'Circular Std Medium';
-    src: url('fonts/CircularStd-Medium.woff2') format('woff2'),
-        url('fonts/CircularStd-Medium.woff') format('woff'),
-
-}
-
-@font-face {
-    font-family: 'Circular Std Book';
-    src: url('fonts/CircularStd-Book.woff2') format('woff2'),
-        url('fonts/CircularStd-Book.woff') format('woff'),
-
-}
-
-@font-face {
     font-family: 'Monument Black';
     src: url('fonts/MonumentExtended-Black.woff') format('woff2'),
         url('fonts/MonumentExtended-Black.woff2') format('woff'),
@@ -39,55 +19,33 @@
 
 }
 
-.navbar-brand {
-    font-family: 'Circular Std Bold';
+html {
+    scroll-behavior: smooth;
+    background-color: #222227;
 }
 
 h2 {
-    font-family: 'Neue Montreal'; 
+    font-family: 'Neue Montreal';
     font-weight: bold;
-}
-
-.text-header {
-    margin-top: 57vh;
-}
-
-.art1 {
-    width: 50vh;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-top: 15vh;
-}
-
-.art2 {
-    width: 50vh;
-    border-radius: 50%;
-    border: 3px solid white;
-}
-
-.art3 {
-    width: 50vh;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-top: 25vh;
 }
 
 .card-title {
-    font-family: 'Neue Montreal'; 
+    font-family: 'Overpass', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 .card-text {
-    font-family: 'Neue Montreal';
-}
-
-.btn-primary {
-    font-family: 'Circular Std Book';
+    font-family: 'Overpass', sans-serif;
+    color: white;
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 0px;
+    border: 0px;
     overflow: hidden;
+    background-color: #222227;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.199);
 }
 
 .welcome {
@@ -101,4 +59,167 @@ h2 {
     left: 0;
     bottom: 20vw;
     color: white;
+}
+
+#tanggalwaktu {
+    font-family: 'Neue Montreal';
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+}
+
+.kanan {
+    font-family: 'Neue Montreal';
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 2px solid white;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(45, 49, 97);
+    /* Set a background color */
+    color: rgb(255, 255, 255);
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #222227;
+    /* Add a dark-grey background on hover */
+}
+
+.clear {
+    clear: both;
+}
+
+
+.tanda {
+    display: block;
+    width: 50vh;
+    height: 55vh;
+    position: absolute;
+    top: 0px;
+    line-height: 100%;
+    background-color: rgba(221, 221, 221, 0.527);
+    opacity: 0%;
+    transform: scale(0);
+    transition: 1s;
+    z-index: 40;
+}
+
+.tanda p {
+    line-height: 53vh;
+    text-align: center;
+    font-family: 'Monument Black';
+    font-size: 30vh;
+    color: #222227;
+
+}
+
+.tanda_tanya:hover .tanda {
+    opacity: 100%;
+    transform: scale(1) rotate(360deg);
+}
+
+.img1 {
+    width: 100%;
+}
+
+.cont_img {
+    border: 2px solid white;
+    width: 50vh;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.cont_edu {
+    box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.199);
+    width: 100%;
+    height: auto;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    font-family: 'Overpass', sans-serif;
+    font-size: large;
+}
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid rgb(255, 255, 255);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
 }
