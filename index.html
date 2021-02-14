@@ -27,13 +27,16 @@
 
 <body id="bodi">
 
+  <!--cursor ripple-->
+  <div class="ripple"></div>
+
   <!--HEADER-->
   <section id="header">
     <header class="text-center pb-4" style="background-color: #222227; height:100vh; line-height: 100vh;">
       <div class="container text-center">
         <img class="img-fluid mx-auto my-auto" style="height:auto; width: 100vh; z-index: 1;" src="img/noise.png">
         <img data-aos="slide-down" class="img-fluid mx-auto my-auto"
-          style="height:auto; width: 50vw; z-index: 2; position:absolute; top:0; left:0; bottom:0; right:0;"
+          style="height:auto; width: 70%; z-index: 2; position:absolute; top:0; left:0; bottom:0; right:0;"
           src="img/welcome.png" alt="">
       </div>
     </header>
@@ -67,7 +70,10 @@
   </nav>
 
   <!--BUTON TO UP-->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+  <a onclick="topFunction()">
+    <div id="myBtn" class="scroll-up">
+    </div>
+  </a>
 
   <!--CAROUSEL-->
   <section id="hum">
@@ -81,11 +87,11 @@
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="bi bi-arrow-left-circle-fill" aria-hidden="true" style="font-size: 3vw;"></span>
+        <span class="bi bi-arrow-left-circle-fill" aria-hidden="true" style="font-size: 40px;"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="bi bi-arrow-right-circle-fill" aria-hidden="true" style="font-size: 3vw;"></span>
+        <span class="bi bi-arrow-right-circle-fill" aria-hidden="true" style="font-size: 40px;"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -97,7 +103,6 @@
     <div class="container pb-5">
       <div class="row">
         <div data-aos="slide-down" class="col text-center mt-5 mb-2">
-          <!--<img src="img/abut.png" style="width: 20vw">-->
           <h2 style="font-family: 'Monument Black','Montserrat'; color:white; font-weight: bold;">ABOUT ME</h2>
         </div>
       </div>
@@ -219,7 +224,6 @@
         </div>
         <div class="col-md mt-5">
           <div data-aos="slide-left" class="card" style="width: 100%;">
-            <!--<img src="img/ss1.jpg" class="card-img-top" alt="...">-->
             <div class="card-img-top"></div>
             <div class="card-body">
               <h5 class="card-title">Other Projects</h5>
@@ -300,8 +304,39 @@
       duration: 1200,
       // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
       mirror: true, // whether elements should animate out while scrolling past them
-      disable: 'mobile',// 'tablet', 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      disable: 'mobile', // 'tablet', 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
     });
+  </script>
+  <script>
+    //Ripple Event Handler
+    var drawRipple = function (ev) {
+      var x = ev.clientX;
+      var y = ev.clientY;
+      var node = document.querySelector(".ripple");
+      var newNode = node.cloneNode(true);
+      newNode.classList.add("animate");
+      newNode.style.left = ev.clientX - 5 + "px";
+      newNode.style.top = ev.clientY - 5 + "px";
+      node.parentNode.replaceChild(newNode, node);
+    };
+
+    //Ripple Triggers
+    window.addEventListener("click", drawRipple);
+
+
+    //Control Handler
+    var controlHandler = function () {
+      document.body.classList.toggle("dark");
+      if (document.body.classList.contains("dark")) {
+        controller.textContent = "Dark Ripple";
+      } else {
+        controller.textContent = "Bright Ripple";
+      }
+    };
+
+    // Control Trigger
+    var controller = document.querySelector(".controller");
+    controller.addEventListener("click", controlHandler);
   </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
