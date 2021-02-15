@@ -31,7 +31,7 @@
   <section id="header">
     <header class="text-center pb-4" style="background-color: #222227; height:100vh; line-height: 100vh;">
       <div class="container text-center">
-        <img class="img-fluid mx-auto my-auto" style="height:auto; width: 100vh; z-index: 1;" src="img/noise.png">
+        <img data-aos="fade-down" class="img-fluid mx-auto my-auto" style="height:auto; width: 100vh; z-index: 1;" src="img/noise.png">
         <img data-aos="slide-down" class="img-fluid mx-auto my-auto"
           style="height:auto; width: 70%; z-index: 2; position:absolute; top:0; left:0; bottom:0; right:0;"
           src="img/welcome.png" alt="">
@@ -49,7 +49,7 @@
   <!--NAVBAR-->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #222227;">
     <div class="container">
-      <a class="navbar-brand" href="#bodi" style="font-family: 'Neue Montreal',' Neue'; font-weight: bold;">R</a>
+      <!--<a class="navbar-brand" href="#bodi" style="font-family: 'Neue Montreal',' Neue'; font-weight: bold;">R</a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -94,12 +94,11 @@
     </div>
   </section>-->
 
+  <!--jumbotron-->
   <section id="hum">
-    <div class="jumbotron jumbotron-fluid text-center"
-      style="padding:0; margin:0; position:relative; line-height: 100%;">
-      <img class="img-fluid" src="img/noise2.png">
-      <h2 style="font-family: 'Monument Black','Overpass Black'; font-size: 7vw; color:white;
-        position:absolute; z-index:10; top:50%; left:0; right:0; bottom:0; line-height:100%"><span
+    <div class="container-fluid text-center kaver" style="background-image:url(img/noise2.png);">
+      <h2 style="font-family: 'Monument Black','Overpass'; font-weight: bold; font-size: 7vw; color:white;
+        position:absolute; z-index:10; top:0%; left:0; right:0; bottom:0; line-height:70vh;"><span
           style="text-transform: uppercase;" id="type"></span></h2>
     </div>
   </section>
@@ -158,8 +157,50 @@
       </div>
   </section>
 
+  <!--Skills-->
+  <section id="skill" style="background-color: #1c1c1f;">
+    <div class="container pb-5">
+      <div class="row">
+        <div data-aos="slide-down" class="col text-center mt-5">
+          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">SKILLS
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div data-aos="slide-right" class="col cont_engineer text-center mx-3 mt-3">
+          <div class="py-5 px-5">
+          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">ENGINEERING
+          </h3>
+          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+            SKILLS</h3>
+            <hr>
+          <ul class="list-group">
+            <li class="list-group-item">C,C++,Python,VB6</li>
+            <li class="list-group-item">Omron Plc</li>
+            <li class="list-group-item">Circuit Wiring</li>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-left" class="col cont_dsgn text-center mx-3 mt-3">
+        <div class="py-5 px-5">
+          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+            DESIGNER
+          </h3>
+          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+            SKILLS</h3>
+            <hr>
+          <ul class="list-group">
+            <li class="list-group-item">Adobe Potoshop</li>
+            <li class="list-group-item">Adobe Illustrator</li>
+            <li class="list-group-item">HTML,CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--MY PORTFOLIO-->
-  <section id="portfolio" style="background-color: #1c1c1f;">
+  <section id="portfolio" style="background-color: #222227;">
     <div class="container pb-5">
       <div class="row">
         <div data-aos="slide-down" class="col text-center mt-5">
@@ -242,7 +283,7 @@
 
   <!--footer-->
   <section id="footer">
-    <footer class="footer mt-auto pt-3" style="background-color: #222227;">
+    <footer class="footer mt-auto pt-3" style="background-color: #1c1c1f;">
       <div data-aos="slide-up" class="container text-center">
         <div class="col text-center pb-1">
           <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">FIND ME
@@ -328,7 +369,7 @@
     //Ripple Triggers
     window.addEventListener("click", drawRipple);
 
-
+    /*
     //Control Handler
     var controlHandler = function () {
       document.body.classList.toggle("dark");
@@ -341,7 +382,7 @@
 
     // Control Trigger
     var controller = document.querySelector(".controller");
-    controller.addEventListener("click", controlHandler);
+    controller.addEventListener("click", controlHandler);*/
   </script>
   <!--showhide profile picture-->
   <script>
@@ -368,6 +409,7 @@
       loop: true
     });
   </script>
+  <script src="js/script.js"></script>
   <!--Option 2: Separate Popper and Bootstrap JS-->
   <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
