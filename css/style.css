@@ -93,7 +93,7 @@ h2 {
 #tanggalwaktu {
     font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
-    font-size: 4vh;
+    font-size: large;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -105,7 +105,7 @@ h2 {
     font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
     position: absolute;
-    font-size: 4vh;
+    font-size: large;
     top: 20px;
     left: 20px;
     z-index: 3;
@@ -179,7 +179,7 @@ h2 {
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
     left: 0;
-    right:0;
+    right: 0;
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -191,7 +191,7 @@ h2 {
     content: "";
     position: absolute;
     top: 20%;
-    right:3px;
+    right: 3px;
     height: 10px;
     width: 10px;
     transform: translate(-50%, -100%) rotate(45deg);
