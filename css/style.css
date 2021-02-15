@@ -49,8 +49,9 @@
 html {
     scroll-behavior: smooth;
     background-color: #222227;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
+
 
 h2 {
     font-family: 'Neue Montreal';
@@ -92,7 +93,7 @@ h2 {
 #tanggalwaktu {
     font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
-    font-size: large;
+    font-size: 4vh;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -104,7 +105,7 @@ h2 {
     font-family: 'Neue Montreal', 'Overpass';
     font-weight: bold;
     position: absolute;
-    font-size: large;
+    font-size: 4vh;
     top: 20px;
     left: 20px;
     z-index: 3;
@@ -177,10 +178,12 @@ h2 {
     width: 30px;
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
-    left: 48.5%;
+    left: 0;
+    right:0;
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .scroll-down::before,
@@ -188,7 +191,7 @@ h2 {
     content: "";
     position: absolute;
     top: 20%;
-    left: 48.5%;
+    right:3px;
     height: 10px;
     width: 10px;
     transform: translate(-50%, -100%) rotate(45deg);
@@ -196,6 +199,7 @@ h2 {
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
+    margin: 0 auto;
 }
 
 .scroll-down::before {
