@@ -23,57 +23,58 @@
 </head>
 
 <body id="bodi">
+  <div class="content">
+    <!--cursor ripple-->
+    <div class="ripple"></div>
 
-  <!--cursor ripple-->
-  <div class="ripple"></div>
-
-  <!--HEADER-->
-  <section id="header">
-    <header class="text-center pb-4" style="background-color: #222227; height:100vh; line-height: 100vh;">
-      <div class="container text-center">
-        <img data-aos="fade-down" class="img-fluid mx-auto my-auto" style="height:auto; width: 100vh; z-index: 1;" src="img/noise.png">
-        <img data-aos="slide-down" class="img-fluid mx-auto my-auto"
-          style="height:auto; width: 70%; z-index: 2; position:absolute; top:0; left:0; bottom:0; right:0;"
-          src="img/welcome.png" alt="">
+    <!--HEADER-->
+    <section id="header">
+      <header class="text-center pb-4" style="background-color: #222227; height:100vh; line-height: 100vh;">
+        <div class="container text-center">
+          <img data-aos="fade-down" class="img-fluid mx-auto my-auto" style="height:auto; width: 100vh; z-index: 1;"
+            src="img/noise.png">
+          <img data-aos="slide-down" class="img-fluid mx-auto my-auto"
+            style="height:auto; width: 70%; z-index: 2; position:absolute; top:0; left:0; bottom:0; right:0;"
+            src="img/welcome.png" alt="">
+        </div>
+      </header>
+      <div class="container-md text-center">
+        <span id="tanggalwaktu"></span>
+        <span class="kanan">>>>>>>>></span>
       </div>
-    </header>
-    <div class="container text-center">
-      <span id="tanggalwaktu"></span>
-      <span class="kanan">>>>>>>>></span>
-    </div>
-    <a href="#hum">
-      <div class="scroll-down"></div>
-    </a>
-  </section>
+      <a href="#hum">
+        <div class="scroll-down text-center"></div>
+      </a>
+    </section>
 
-  <!--NAVBAR-->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #222227;">
-    <div class="container">
-      <!--<a class="navbar-brand" href="#bodi" style="font-family: 'Neue Montreal',' Neue'; font-weight: bold;">R</a>-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#hum" style="font-family: 'Monument Regular','Overpass';">Home <span
-              class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#abut" style="font-family: 'Monument Regular','Overpass';">About</a>
-          <a class="nav-link" href="#portfolio" style="font-family: 'Monument Regular','Overpass';">Portfolio</a>
-          <a class="nav-link" href="#footer" style="font-family: 'Monument Regular','Overpass';">Contact</a>
+    <!--NAVBAR-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #222227;">
+      <div class="container">
+        <!--<a class="navbar-brand" href="#bodi" style="font-family: 'Neue Montreal',' Neue'; font-weight: bold;">R</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#hum" style="font-family: 'Monument Regular','Overpass';">Home <span
+                class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#abut" style="font-family: 'Monument Regular','Overpass';">About</a>
+            <a class="nav-link" href="#portfolio" style="font-family: 'Monument Regular','Overpass';">Portfolio</a>
+            <a class="nav-link" href="#footer" style="font-family: 'Monument Regular','Overpass';">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!--BUTON TO UP-->
-  <a onclick="topFunction()">
-    <div id="myBtn" class="scroll-up">
-    </div>
-  </a>
+    <!--BUTON TO UP-->
+    <a onclick="topFunction()">
+      <div id="myBtn" class="scroll-up">
+      </div>
+    </a>
 
-  <!--CAROUSEL-->
-  <!--<section id="hum">
+    <!--CAROUSEL-->
+    <!--<section id="hum">
     <div data-aos-mirror="false" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -94,215 +95,218 @@
     </div>
   </section>-->
 
-  <!--jumbotron-->
-  <section id="hum">
-    <div class="container-fluid text-center kaver" style="background-image:url(img/noise2.png);">
-      <h2 style="font-family: 'Monument Black','Overpass'; font-weight: bold; font-size: 7vw; color:white;
+    <!--jumbotron-->
+    <section id="hum">
+      <div class="container-fluid text-center kaver" style="background-image:url(img/noise2.png);">
+        <h2 style="font-family: 'Monument Black','Overpass'; font-weight: bold; font-size: 7vw; color:white;
         position:absolute; z-index:10; top:0%; left:0; right:0; bottom:0; line-height:70vh;"><span
-          style="text-transform: uppercase;" id="type"></span></h2>
-    </div>
-  </section>
-
-  <!--ABOUT ME-->
-  <section id="abut" style="background-color: #222227;">
-    <div class="container pb-5">
-      <div class="row">
-        <div data-aos="slide-down" class="col text-center mt-5 mb-2">
-          <h2 style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">ABOUT ME</h2>
-        </div>
+            style="text-transform: uppercase;" id="type"></span></h2>
       </div>
-      <div class="row">
-        <div data-aos="slide-right" class="col-md text-center">
-          <div class="cont_edu mt-2 mr-3 mb-2 py-5 px-5">
-            <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
-              EDUCATIONAL
-            </h3>
-            <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
-              HISTORY</h3>
-            <ul class="list-group">
-              <li class="list-group-item">SDN Leuwigajah 3</li>
-              <li class="list-group-item">SMPN 09 Cimahi</li>
-              <li class="list-group-item">SMKN 01 Cimahi</li>
-              <li class="list-group-item">Politeknik Manufaktur Bandung</li>
-            </ul>
-          </div>
-          <div class="mt-4" style="width: 100%; height: 21%; overflow:hidden;">
-            <img src="img/splitter.png" style="width: 100%;">
+    </section>
+
+    <!--ABOUT ME-->
+    <section id="abut" style="background-color: #222227;">
+      <div class="container pb-5">
+        <div class="row">
+          <div data-aos="slide-down" class="col text-center mt-5 mb-2">
+            <h2 style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">ABOUT ME</h2>
           </div>
         </div>
-
-        <div class="col">
-          <div class="cont_img mt-2 mr-3 mb-2">
-            <img id="img1" src="img/unrevealed.png">
-            <img id="img2" src="img/revealed.png">
-            <a onclick="ShowHide()" class="tombol">
-              <i class="bi bi-x"></i>
-            </a>
+        <div class="row">
+          <div data-aos="slide-right" class="col-md text-center">
+            <div class="cont_edu mt-2 mr-3 mb-2 py-5 px-5">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                EDUCATIONAL
+              </h3>
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                HISTORY</h3>
+              <ul class="list-group">
+                <li class="list-group-item">SDN Leuwigajah 3</li>
+                <li class="list-group-item">SMPN 09 Cimahi</li>
+                <li class="list-group-item">SMKN 01 Cimahi</li>
+                <li class="list-group-item">Politeknik Manufaktur Bandung</li>
+              </ul>
+            </div>
+            <div class="mt-4" style="width: 100%; height: 21%; overflow:hidden;">
+              <img src="img/splitter.png" style="width: 100%;">
+            </div>
           </div>
-          <p data-aos="slide-left" class="mt-1"
-            style="font-family: 'Overpass', sans-serif; color:white; font-size: large;">Hello, my name is
-            Rachmat Syaiful
-            Mujab, born on 21 March 2001 in
-            Bandung.I live at cimahi. I am a
-            junior programmer and designer. Until this portfolio was created, I had mastered several programming
-            languages,
-            there are : C, C ++, and Python. And I will continue to studying different programming languages. I can also
-            programming the Embedded
-            system on Arduino which has a programming language like the C language and the Omron Programmable Logic
-            Controller with the Ladder Diagram language.Furtermore, I can also programming UI visualbasic 6 with
-            visualbasic
-            language, and designing Omron's UI / HMI (Human User Interface) interface.</p>
-          <div class="clear"></div>
-        </div>
-      </div>
-  </section>
 
-  <!--Skills-->
-  <section id="skill" style="background-color: #1c1c1f;">
-    <div class="container pb-5">
-      <div class="row">
-        <div data-aos="slide-down" class="col text-center mt-5">
-          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">SKILLS
-          </h2>
+          <div class="col">
+            <div class="cont_img mt-2 mr-3 mb-2">
+              <img id="img1" src="img/unrevealed.png">
+              <img id="img2" src="img/revealed.png">
+              <a onclick="ShowHide()" class="tombol">
+                <i class="bi bi-x"></i>
+              </a>
+            </div>
+            <p data-aos="slide-left" class="mt-1"
+              style="font-family: 'Overpass', sans-serif; color:white; font-size: large;">Hello, my name is
+              Rachmat Syaiful
+              Mujab, born on 21 March 2001 in
+              Bandung.I live at cimahi. I am a
+              junior programmer and designer. Until this portfolio was created, I had mastered several programming
+              languages,
+              there are : C, C ++, and Python. And I will continue to studying different programming languages. I can
+              also
+              programming the Embedded
+              system on Arduino which has a programming language like the C language and the Omron Programmable Logic
+              Controller with the Ladder Diagram language.Furtermore, I can also programming UI visualbasic 6 with
+              visualbasic
+              language, and designing Omron's UI / HMI (Human User Interface) interface.</p>
+            <div class="clear"></div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div data-aos="slide-right" class="col-md cont_engineer text-center mx-3 mt-3">
-          <div class="py-5 px-5">
-          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">ENGINEERING
-          </h3>
-          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
-            SKILLS</h3>
-            <hr>
-          <ul class="list-group">
-            <li class="list-group-item">C,C++,Python,VB6</li>
-            <li class="list-group-item">Omron Plc</li>
-            <li class="list-group-item">Circuit Wiring</li>
-          </ul>
-        </div>
-      </div>
-      <div data-aos="slide-left" class="col-md cont_dsgn text-center mx-3 mt-3">
-        <div class="py-5 px-5">
-          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
-            DESIGNER
-          </h3>
-          <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
-            SKILLS</h3>
-            <hr>
-          <ul class="list-group">
-            <li class="list-group-item">Adobe Potoshop</li>
-            <li class="list-group-item">Adobe Illustrator</li>
-            <li class="list-group-item">HTML,CSS</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!--MY PORTFOLIO-->
-  <section id="portfolio" style="background-color: #222227;">
-    <div class="container pb-5">
-      <div class="row">
-        <div data-aos="slide-down" class="col text-center mt-5">
-          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">MY
-            PORTFOLIO</h2>
+    <!--Skills-->
+    <section id="skill" style="background-color: #1c1c1f;">
+      <div class="container pb-5">
+        <div class="row">
+          <div data-aos="slide-down" class="col text-center mt-5">
+            <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">SKILLS
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md mt-5">
-          <div data-aos="slide-right" class="card" style="width: 100%;">
-            <img src="img/poster1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Memphis Style Poster</h5>
-              <p class="card-text">Poster dari sebuah artikel di media cetak online, Software
-                yang digunakan adalah Adobe Potoshop CS6.
-              </p>
+        <div class="row">
+          <div data-aos="slide-right" class="col-md cont_engineer text-center mx-3 mt-3">
+            <div class="py-5 px-5">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                ENGINEERING
+              </h3>
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                SKILLS</h3>
+              <hr>
+              <ul class="list-group">
+                <li class="list-group-item">C,C++,Python,VB6</li>
+                <li class="list-group-item">Omron Plc</li>
+                <li class="list-group-item">Circuit Wiring</li>
+              </ul>
+            </div>
+          </div>
+          <div data-aos="slide-left" class="col-md cont_dsgn text-center mx-3 mt-3">
+            <div class="py-5 px-5">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                DESIGNER
+              </h3>
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+                SKILLS</h3>
+              <hr>
+              <ul class="list-group">
+                <li class="list-group-item">Adobe Potoshop</li>
+                <li class="list-group-item">Adobe Illustrator</li>
+                <li class="list-group-item">HTML,CSS</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md mt-5">
-          <div data-aos="slide-down" class="card" style="width: 100%;">
-            <img src="img/art.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Flat Illustration</h5>
-              <p class="card-text">Flat illustration leonardo da vinci yang di trace dari
-                desain leonardo da vinci sebagai character di Assasins Creed 2.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mt-5">
-          <div data-aos="slide-left" class="card" style="width: 100%;">
-            <img src="img/poster2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Collage Poster</h5>
-              <p class="card-text">Collage Poster peradaban
-                yunani yang bertujuan mengedukasi pembaca tentang peradaban yunani kuno.
-              </p>
-              <!--<a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>-->
-            </div>
-          </div>
-        </div>
-      </div>
+    </section>
 
-      <div class="row mb-5">
-        <div class="col-md mt-5">
-          <div data-aos="slide-right" class="card" style="width: 100%;">
-            <img src="img/ss1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">VisualBasic6 UI</h5>
-              <p class="card-text">UI dari sebuah restoran jepang, terdapat 4 menu makanan,
-                terinspirasi dari vending machine di jepang.
-              </p>
+    <!--MY PORTFOLIO-->
+    <section id="portfolio" style="background-color: #222227;">
+      <div class="container pb-5">
+        <div class="row">
+          <div data-aos="slide-down" class="col text-center mt-5">
+            <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">MY
+              PORTFOLIO</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md mt-5">
+            <div data-aos="slide-right" class="card" style="width: 100%;">
+              <img src="img/poster1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Memphis Style Poster</h5>
+                <p class="card-text">Poster dari sebuah artikel di media cetak online, Software
+                  yang digunakan adalah Adobe Potoshop CS6.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mt-5">
+            <div data-aos="slide-down" class="card" style="width: 100%;">
+              <img src="img/art.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Flat Illustration</h5>
+                <p class="card-text">Flat illustration leonardo da vinci yang di trace dari
+                  desain leonardo da vinci sebagai character di Assasins Creed 2.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mt-5">
+            <div data-aos="slide-left" class="card" style="width: 100%;">
+              <img src="img/poster2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Collage Poster</h5>
+                <p class="card-text">Collage Poster peradaban
+                  yunani yang bertujuan mengedukasi pembaca tentang peradaban yunani kuno.
+                </p>
+                <!--<a href="#" class="btn bg-info btn-primary">Klik untuk lebih lanjut</a>-->
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md mt-5">
-          <div data-aos="slide-up" class="card" style="width: 100%;">
-            <img src="img/haha.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Traffic Simulation CX-Design</h5>
-              <p class="card-text">Traffic simulation menggunakan CX-Design.Mengsimulasikan pertigaan
-                dengan 3 traffic light.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md mt-5">
-          <div data-aos="slide-left" class="card" style="width: 100%;">
-            <div class="card-img-top"></div>
-            <div class="card-body">
-              <h5 class="card-title">Other Projects</h5>
-              <p class="card-text">ComingSoon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!--footer-->
-  <section id="footer">
-    <footer class="footer mt-auto pt-3" style="background-color: #1c1c1f;">
-      <div data-aos="slide-up" class="container text-center">
-        <div class="col text-center pb-1">
-          <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">FIND ME
-          </h2>
-          <ul class="text-center mx-auto text-center" style="list-style-type: none;">
-            <li style="font-size:x-large">
-              <a target="_blank" class="mx-1" href="https://www.instagram.com/r.syaifulmujab/"><i
-                  class="bi bi-instagram"></i></a>
-              <a target="_blank" class="mx-1" href="https://www.facebook.com/rahmat.saipulmujab/"><i
-                  class="bi bi-facebook"></i></a>
-              <a target="_blank" class="mx-1" href="http://wa.me/+62881024369955"><i class="bi bi-whatsapp"></i></a>
-              <a target="_blank" class="mx-1" href="https://github.com/Endeavour821"><i class="bi bi-github"></i></a>
-              <a><span style="color:transparent">
-                  <<</span> </a> </li> </ul> <p style="font-family: 'Overpass'; color: white;">Copyright
-                    2021.Make with <span><i class="bi bi-heart-fill"></i></span> In West Java</p>
+        <div class="row mb-5">
+          <div class="col-md mt-5">
+            <div data-aos="slide-right" class="card" style="width: 100%;">
+              <img src="img/ss1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">VisualBasic6 UI</h5>
+                <p class="card-text">UI dari sebuah restoran jepang, terdapat 4 menu makanan,
+                  terinspirasi dari vending machine di jepang.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mt-5">
+            <div data-aos="slide-up" class="card" style="width: 100%;">
+              <img src="img/haha.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Traffic Simulation CX-Design</h5>
+                <p class="card-text">Traffic simulation menggunakan CX-Design.Mengsimulasikan pertigaan
+                  dengan 3 traffic light.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md mt-5">
+            <div data-aos="slide-left" class="card" style="width: 100%;">
+              <div class="card-img-top"></div>
+              <div class="card-body">
+                <h5 class="card-title">Other Projects</h5>
+                <p class="card-text">ComingSoon</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </section>
+    </section>
+
+    <!--footer-->
+    <section id="footer">
+      <footer class="footer mt-auto pt-3" style="background-color: #1c1c1f;">
+        <div data-aos="slide-up" class="container text-center">
+          <div class="col text-center pb-1">
+            <h2 class="Ingfo" style="font-family: 'Monument Black','Overpass'; color:white; font-weight: bold;">FIND ME
+            </h2>
+            <ul class="text-center mx-auto text-center" style="list-style-type: none;">
+              <li style="font-size:x-large">
+                <a target="_blank" class="mx-1" href="https://www.instagram.com/r.syaifulmujab/"><i
+                    class="bi bi-instagram"></i></a>
+                <a target="_blank" class="mx-1" href="https://www.facebook.com/rahmat.saipulmujab/"><i
+                    class="bi bi-facebook"></i></a>
+                <a target="_blank" class="mx-1" href="http://wa.me/+62881024369955"><i class="bi bi-whatsapp"></i></a>
+                <a target="_blank" class="mx-1" href="https://github.com/Endeavour821"><i class="bi bi-github"></i></a>
+                <a><span style="color:transparent">
+                    <<</span> </a> </li> </ul> <p style="font-family: 'Overpass'; color: white;">Copyright
+                      2021.Make with <span><i class="bi bi-heart-fill"></i></span> In West Java</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
 
 
   <!-- Optional JavaScript; choose one of the two! -->
