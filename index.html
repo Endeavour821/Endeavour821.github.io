@@ -51,17 +51,19 @@
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #222227;">
       <div class="container">
         <!--<a class="navbar-brand" href="#bodi" style="font-family: 'Neue Montreal',' Neue'; font-weight: bold;">R</a>-->
-        <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mx-auto active" type="button" data-toggle="collapse"
+          data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="bi bi-chevron-down"></span>
         </button>
         <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" href="#hum" style="font-family: 'Monument Regular','Overpass';">Home <span
                 class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#abut" style="font-family: 'Monument Regular','Overpass';">About</a>
-            <a class="nav-link" href="#portfolio" style="font-family: 'Monument Regular','Overpass';">Portfolio</a>
-            <a class="nav-link" href="#footer" style="font-family: 'Monument Regular','Overpass';">Contact</a>
+            <a class="nav-link active" href="#abut" style="font-family: 'Monument Regular','Overpass';">About</a>
+            <a class="nav-link active" href="#portfolio"
+              style="font-family: 'Monument Regular','Overpass';">Portfolio</a>
+            <a class="nav-link active" href="#footer" style="font-family: 'Monument Regular','Overpass';">Contact</a>
           </div>
         </div>
       </div>
@@ -115,10 +117,10 @@
         <div class="row">
           <div data-aos="slide-right" class="col-md text-center">
             <div class="cont_edu mt-2 mr-3 mb-2 py-5 px-5">
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 EDUCATIONAL
               </h3>
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 HISTORY</h3>
               <ul class="list-group">
                 <li class="list-group-item">SDN Leuwigajah 3</li>
@@ -171,10 +173,10 @@
         <div class="row">
           <div data-aos="slide-right" class="col-md cont_engineer text-center mx-3 mt-3">
             <div class="py-5 px-5">
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 ENGINEERING
               </h3>
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 SKILLS</h3>
               <hr>
               <ul class="list-group">
@@ -186,10 +188,10 @@
           </div>
           <div data-aos="slide-left" class="col-md cont_dsgn text-center mx-3 mt-3">
             <div class="py-5 px-5">
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 DESIGNER
               </h3>
-              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold; font-size: 4vh;">
+              <h3 style="font-family: 'Monument Regular','Overpass'; color:white; font-weight: bold;">
                 SKILLS</h3>
               <hr>
               <ul class="list-group">
@@ -301,7 +303,8 @@
                 <a target="_blank" class="mx-1" href="https://github.com/Endeavour821"><i class="bi bi-github"></i></a>
                 <a><span style="color:transparent">
                     <<</span> </a> </li> </ul> <p style="font-family: 'Overpass'; color: white;">Copyright
-                      2021.Make with <span><i class="bi bi-heart-fill"></i></span> In West Java</p>
+                      2021.Make with <span><i class="bi bi-heart-fill" style="color:#e099bd;"></i></span> In West Java
+                      </p>
           </div>
         </div>
       </footer>
@@ -413,7 +416,15 @@
       loop: true
     });
   </script>
+  <!--custom script-->
   <script src="js/script.js"></script>
+  <!--click function-->
+  <script>
+    $("a.nav-link").click(function () {
+      $("a.nav-link").css("color", "white");
+      $(this).css("color", "#9e99e0");
+    });
+  </script>
   <!--Option 2: Separate Popper and Bootstrap JS-->
   <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
